@@ -37,10 +37,16 @@ async function getHotels() {
     if (html != "") {
       console.log("Getting page " + page + "...");
       const $ = cheerio.load(html);
-      $('.mainTitle3').each(async function() {
-        var href = $('a', this).attr('href');
-        var name = $('span', this).text();
-        hotels.push({"name": name, "link": href, "restaurants": (await getRestaurants(href))});
+
+      $('.hotelQuickView').each(function() {
+        var category = $('.category', this).text();
+        if (category.includes('Hôtel')) {
+          $('.mainTitle3', this).each(async function() {
+            var href = $('a', this).attr('href');
+            var name = $('span', this).text();
+            hotels.push({"name": name, "link": href, "restaurants": (await getRestaurants(href))});
+          });
+        }
       });
     }
     page++;
