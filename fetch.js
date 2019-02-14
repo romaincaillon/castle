@@ -1,8 +1,22 @@
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 
+async function getRestaurants(hotelLink) {
+  var restaurants = [];
+  response = await fetch(hotelLink);
+  html = await response.text();
+  const $ = cheerio.load(html);
+
+  $('.jsSecondNavSub li').each(function() {
+    var restaurantName = $('a', this).text();
+    restaurants.push(restaurantName.trim());
+  });
+
+  return restaurants;
+}
+
 async function getHotels() {
-  hotels = [];
+  var hotels = [];
   var page = 1;
   do {
     response = await fetch("https://www.relaischateaux.com/fr/update-destination-results", {
@@ -23,10 +37,10 @@ async function getHotels() {
     if (html != "") {
       console.log("Getting page " + page + "...");
       const $ = cheerio.load(html);
-      $('.mainTitle3').each(function() {
+      $('.mainTitle3').each(async function() {
         var href = $('a', this).attr('href');
         var name = $('span', this).text();
-        hotels.push({"name": name, "link": href});
+        hotels.push({"name": name, "link": href, "restaurants": (await getRestaurants(href))});
       });
     }
     page++;
@@ -38,16 +52,3 @@ async function getHotels() {
   let hotels = await getHotels();
   console.log(hotels);
 })();
-
-/*<ul class="jsSecondNavSub">
-   <li class="">
-      <a href="https://www.relaischateaux.com/fr/france/restaurant/gastronomique-cote-d-or-la-bussiere-sur-ouche" data-id="isRestaurant816">
-      Gastronomique
-      </a>
-   </li>
-   <li class="active">
-      <a href="https://www.relaischateaux.com/fr/france/restaurant/bistrot-des-moines-cote-d-or-la-bussiere-sur-ouche" data-id="isRestaurant411">
-      Bistrot des Moines
-      </a>
-   </li>
-</ul>*/
