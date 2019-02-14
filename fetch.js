@@ -21,6 +21,7 @@ async function getHotels() {
     });
     html = (await response.json()).html;
     if (html != "") {
+      console.log("Getting page " + page + "...");
       const $ = cheerio.load(html);
       $('.mainTitle3').each(function() {
         var href = $('a', this).attr('href');
@@ -37,3 +38,16 @@ async function getHotels() {
   let hotels = await getHotels();
   console.log(hotels);
 })();
+
+/*<ul class="jsSecondNavSub">
+   <li class="">
+      <a href="https://www.relaischateaux.com/fr/france/restaurant/gastronomique-cote-d-or-la-bussiere-sur-ouche" data-id="isRestaurant816">
+      Gastronomique
+      </a>
+   </li>
+   <li class="active">
+      <a href="https://www.relaischateaux.com/fr/france/restaurant/bistrot-des-moines-cote-d-or-la-bussiere-sur-ouche" data-id="isRestaurant411">
+      Bistrot des Moines
+      </a>
+   </li>
+</ul>*/
