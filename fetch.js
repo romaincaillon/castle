@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 
+//retourne la liste des restaurants
 async function getRestaurants(hotelLink) {
   var restaurants = [];
   response = await fetch(hotelLink);
@@ -15,6 +16,7 @@ async function getRestaurants(hotelLink) {
   return restaurants;
 }
 
+//retourne la liste des hotels
 async function getHotels() {
   var hotels = [];
   var page = 1;
@@ -40,7 +42,7 @@ async function getHotels() {
 
       $('.hotelQuickView').each(function() {
         var category = $('.category', this).text();
-        if (category.includes('Hôtel')) {
+        if (category.includes('Hôtel')) { // on garde seulement les hôtels
           $('.mainTitle3', this).each(async function() {
             var href = $('a', this).attr('href');
             var name = $('span', this).text();
