@@ -22,7 +22,7 @@ async function getRestaurants() {
 (async function() {
   restaurants = await getRestaurants();
   console.log(restaurants);
-  fs.writeFile('restaurants.json', JSON.stringify(restaurants, null, 2), (err) => {
+  fs.writeFile('../json/restaurants.json', JSON.stringify(restaurants, null, 2), (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
   });

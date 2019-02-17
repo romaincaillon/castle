@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Anne de Bretagne",
+    "link": "https://www.relaischateaux.com/fr/france/annedebretagne-loire-atlantique-la-plaine-sur-mer",
+    "restaurants": [
+      "Anne de Bretagne"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Château de Berne",
+    "link": "https://www.relaischateaux.com/fr/france/berne-var-lorgues",
+    "restaurants": [
+      "Le Jardin de Benjamin",
+      "Le Bistrot"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Cap d’Antibes Beach Hotel",
+    "link": "https://www.relaischateaux.com/fr/france/antibes-alpes-maritimes-cap-d-antibes",
+    "restaurants": [
+      "Les Pêcheurs",
+      "Le Cap"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Assiette Champenoise",
+    "link": "https://www.relaischateaux.com/fr/france/assiette-champenoise-champagne-ardenne-tinqueux",
+    "restaurants": [
+      "Assiette Champenoise"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Auberge des Templiers",
+    "link": "https://www.relaischateaux.com/fr/france/templiers-loiret-boismorand",
+    "restaurants": [
+      "Auberge des Templiers"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Auberge du Jeu de Paume",
+    "link": "https://www.relaischateaux.com/fr/france/jeudepaume-oise-chantilly",
+    "restaurants": [
+      "La Table du Connétable",
+      "Le Jardin d'Hiver"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Château de la Treyne",
+    "link": "https://www.relaischateaux.com/fr/france/treyne-lot-lacave",
+    "restaurants": [
+      "Château de la Treyne"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Château de La Chèvre d’Or",
+    "link": "https://www.relaischateaux.com/fr/france/chevredor-alpes-maritimes-eze-village",
+    "restaurants": [
+      "La Chèvre d'Or",
+      "Autres restaurants"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Château de Valmer",
+    "link": "https://www.relaischateaux.com/fr/france/chateau-de-valmer-la-croix-valmer",
+    "restaurants": [
+      "La Palmeraie",
+      "La Piscine"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Flocons de Sel",
+    "link": "https://www.relaischateaux.com/fr/france/flocons-haute-savoie-megeve",
+    "restaurants": [
+      "Flocons de Sel",
+      "Flocons Village"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Hôtel Impérial Garoupe",
+    "link": "https://www.relaischateaux.com/fr/france/garoupe-alpes-maritimes-cap-d-antibes",
+    "restaurants": [
+      "Le Pavillon",
+      "Pavillon Beach"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Château de Mercuès",
+    "link": "https://www.relaischateaux.com/fr/france/mercues-lot-mercues",
+    "restaurants": [
+      "Le Duèze",
+      "Le Bistrot du Château"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Hameau Albert Ier",
+    "link": "https://www.relaischateaux.com/fr/france/albert-haute-savoie-chamonix-mont-blanc",
+    "restaurants": [
+      "Albert 1er",
+      "La Maison Carrier"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Hôtel Le Chabichou Restaurants & Spa",
+    "link": "https://www.relaischateaux.com/fr/france/chabichou-savoie-courchevel-1850",
+    "restaurants": [
+      "Le Chabichou",
+      "Le Chabotté"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Domaine de Rochevilaine",
+    "link": "https://www.relaischateaux.com/fr/france/rochevilaine-morbihan-billiers",
+    "restaurants": [
+      "Domaine de Rochevilaine"
+    ],
+    "starred": true
+  },
+  {
+    "name": "La Bonne Étape",
+    "link": "https://www.relaischateaux.com/fr/france/bonneetape-alpes-de-haute-provence-chateau-arnoux",
+    "restaurants": [
+      "La Bonne Étape",
+      "Au Goût du Jour"
+    ],
+    "starred": true
+  },
+  {
+    "name": "L'Auberge Basque",
+    "link": "https://www.relaischateaux.com/fr/france/auberge-basque-saint-pee-sur-nivelle-pyrenees-atlantiques",
+    "restaurants": [
+      "L'Auberge Basque"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Hôtel Les Barmes de l'Ours",
+    "link": "https://www.relaischateaux.com/fr/france/barmes-de-l-ours-savoie",
+    "restaurants": [
+      "La Table de l'Ours",
+      "Autres restaurants"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Le Couvent des Minimes Hôtel & Spa L'Occitane",
+    "link": "https://www.relaischateaux.com/fr/france/minimes-alpes-de-haute-provence-mane",
+    "restaurants": [
+      "Le Cloître",
+      "Pesquier"
+    ],
+    "starred": true
+  },
+  {
+    "name": "La Grenouillère",
+    "link": "https://www.relaischateaux.com/fr/france/lagrenouillere-pas-de-calais-la-madelaine-sous-montreuil",
+    "restaurants": [
+      "La Grenouillère",
+      "Froggy's Tavern"
+    ],
+    "starred": true
+  },
+  {
+    "name": "La Grande Maison de Bernard Magrez",
+    "link": "https://www.relaischateaux.com/fr/france/grande-maison-bernard-magrez-gironde-bordeaux",
+    "restaurants": [
+      "La Grande Maison de Bernard Magrez"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Le Chambard",
+    "link": "https://www.relaischateaux.com/fr/france/le-chambard-haut-rhin-kaysersberg",
+    "restaurants": [
+      "La Table d'Olivier Nasti",
+      "La Winstub"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Le Petit Nice-Passedat",
+    "link": "https://www.relaischateaux.com/fr/france/passedat-bouches-du-rhone-marseille",
+    "restaurants": [
+      "Le Petit Nice",
+      "Le 1917"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Les Hautes Roches",
+    "link": "https://www.relaischateaux.com/fr/france/hautesroches-indre-et-loire-rochecorbon",
+    "restaurants": [
+      "Les Hautes Roches"
+    ],
+    "starred": true
+  },
+  {
+    "name": "Le Vieux Logis",
+    "link": "https://www.relaischateaux.com/fr/france/vieuxlogis-dordogne-tremolat",
+    "restaurants": [
+      "Le Vieux Logis",
+      "Le Bistrot"
+    ],
+    "starred": true
+  }
+]

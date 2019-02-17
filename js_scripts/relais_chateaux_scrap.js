@@ -61,7 +61,7 @@ async function getHotels() {
 (async function() {
   let hotels = await getHotels();
   console.log(hotels);
-  fs.writeFile('hotels.json', JSON.stringify(hotels, null, 2), (err) => {
+  fs.writeFile('../json/hotels.json', JSON.stringify(hotels, null, 2), (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
   });
