@@ -1,5 +1,6 @@
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
+const fs = require('fs');
 
 //retourne la liste des restaurants
 async function getRestaurants(hotelLink, hotelName) {
@@ -13,7 +14,7 @@ async function getRestaurants(hotelLink, hotelName) {
     restaurantName = restaurantName.trim();
     restaurants.push(restaurantName);
   });
-  
+
   return (restaurants.length > 0 ? restaurants : [hotelName]);
 }
 
@@ -60,4 +61,8 @@ async function getHotels() {
 (async function() {
   let hotels = await getHotels();
   console.log(hotels);
+  fs.writeFile('hotels.json', JSON.stringify(hotels, null, 2), (err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  });
 })();
